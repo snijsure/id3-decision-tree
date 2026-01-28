@@ -1,8 +1,8 @@
-# Decision Tree Evolution: ID3 → C4.5 → XGBoost → LightGBM
+# Machine Learning Evolution: ID3 → C4.5 → XGBoost → LightGBM
 
-**40 years of machine learning progress in one repository (1986-2026)**
+**40 years of decision tree innovation (1986-2026)**
 
-Implementation and comparison of decision tree algorithms from foundational information theory to modern gradient boosting.
+Implementation and comparison of production ML algorithms from foundational machine learning theory to modern gradient boosting, tracing the evolution of decision tree methods that power real-world systems.
 
 [![Test Status](https://img.shields.io/badge/tests-passing-brightgreen)]()
 [![Datasets](https://img.shields.io/badge/datasets-3%20UCI%20ML-blue)]()
@@ -43,11 +43,11 @@ Classical methods competitive: ID3/C4.5 ~93%, XGBoost/LightGBM ~82-96%
 ## Table of Contents
 - [40-Year Evolution](#40-year-evolution-id3--c45--xgboost)
 - [Quick Comparison](#quick-comparison-id3-vs-c45)
-- [Files](#files)
+- [Repository Structure](#repository-structure)
 - [Usage](#usage)
 - [Results](#results-id3-vs-c45-on-uci-datasets)
 - [XGBoost Results](#xgboost-the-modern-champion)
-- [Algorithm Details](#algorithm-details)
+- [Algorithms](#algorithms)
 - [Historical Context](#historical-context--evolution)
 - [References](#references)
 
