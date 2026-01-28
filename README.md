@@ -201,8 +201,8 @@ src/
     analysis.py               # ID3 behavior analysis
     compare_algorithms.py     # ID3 vs C4.5
     evolution_comparison.py   # ID3 → C4.5 → XGBoost
-    modern_comparison.py      # All 4 algorithms
-    large_dataset_comparison.py # Production-scale tests
+    modern_comparison.py      # All 4 algorithms (ID3, C4.5, XGBoost, LightGBM)
+    large_dataset_comparison.py # Production-scale tests (XGBoost + LightGBM)
 
   visualization/      # Tree rendering
     tree_renderer.py  # Professional tree visualizations
@@ -211,7 +211,7 @@ docs/                 # Documentation
   COMPARISON.md       # ID3 vs C4.5 detailed analysis
   EVOLUTION.md        # 40-year evolution analysis
   MODERN_SOTA.md      # State-of-the-art (2026)
-  RESULTS.md          # ID3 experimental results
+  ID3-RESULTS.md      # ID3 experimental results
   C45_SUMMARY.md      # C4.5 executive summary
 
 outputs/              # Generated visualizations
@@ -572,6 +572,18 @@ These algorithms established the foundation for modern machine learning:
 **C4.5 (1993)**:
 - Quinlan, J.R. (1993). *C4.5: Programs for Machine Learning*. Morgan Kaufmann.
 - ISBN: 978-1558602380
+
+**XGBoost (2016)**:
+- Chen, T., & Guestrin, C. (2016). "XGBoost: A Scalable Tree Boosting System." *Proceedings of KDD '16*.
+- [Paper Link](https://arxiv.org/abs/1603.02754)
+- [Python Implementation](https://github.com/dmlc/xgboost)
+- [Documentation](https://xgboost.readthedocs.io/)
+
+**LightGBM (2017)**:
+- Ke, G., et al. (2017). "LightGBM: A Highly Efficient Gradient Boosting Decision Tree." *Proceedings of NIPS 2017*.
+- [Paper Link](https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree)
+- [Python Implementation](https://github.com/microsoft/LightGBM)
+- [Documentation](https://lightgbm.readthedocs.io/)
 
 ### Related Work
 
