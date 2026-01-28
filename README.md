@@ -122,6 +122,27 @@ Modern ensemble approach:
    - Histogram-based splitting for speed
    - Handles missing values natively with learned optimal direction
 
+### LightGBM (2017) - State-of-the-Art Gradient Boosting
+
+Microsoft's improvement on XGBoost for large-scale data:
+
+1. **Histogram-Based Learning**: Bins continuous features into discrete buckets
+   - Dramatically faster training (up to 20x on large datasets)
+   - Lower memory usage through histogram representation
+   - Finds splits using binned histograms instead of sorting
+2. **GOSS (Gradient-based One-Side Sampling)**: Intelligent data sampling
+   - Keeps all instances with large gradients (informative examples)
+   - Random samples instances with small gradients
+   - Maintains accuracy while reducing computation
+3. **EFB (Exclusive Feature Bundling)**: Feature dimensionality reduction
+   - Bundles mutually exclusive features (e.g., one-hot encoded)
+   - Reduces feature space without information loss
+   - Speeds up training on high-dimensional data
+4. **Leaf-Wise Growth**: Best-first tree building strategy
+   - XGBoost: Level-wise (breadth-first, balanced trees)
+   - LightGBM: Leaf-wise (best-first, deeper trees with max_depth control)
+   - Results in more accurate trees with fewer nodes
+
 ## Decision Tree Visualizations
 
 Professional tree renderings using the Reingold-Tilford layout algorithm on the Congressional Voting dataset. Each visualization uses a distinct color scheme to highlight algorithmic differences:
@@ -369,6 +390,22 @@ Both C4.5 and XGBoost achieve **96.18%** (ID3: 95.42%).
 - When accuracy matters most
 - Complex patterns and non-linear interactions
 - Need robustness to noise
+
+### Industry Adoption
+
+Major companies using XGBoost and LightGBM in production:
+
+| Company | Algorithm | Use Case |
+|---------|-----------|----------|
+| **Microsoft** | LightGBM | Bing search ranking |
+| **Uber** | LightGBM | ETA prediction, fraud detection |
+| **Airbnb** | XGBoost | Search ranking, pricing |
+| **Netflix** | XGBoost | Recommendation systems |
+| **Facebook** | XGBoost/LightGBM | CTR prediction, ads |
+| **Google** | XGBoost | Various ML pipelines |
+| **Amazon** | XGBoost/LightGBM | Product recommendations |
+
+These algorithms power critical production systems handling billions of predictions daily.
 
 **Trade-off**: 6.7x slower than ID3 (but still < 1 second on these datasets)
 
