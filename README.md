@@ -393,7 +393,7 @@ Both C4.5 and XGBoost achieve **96.18%** (ID3: 95.42%).
 
 ### Industry Adoption
 
-Major companies using XGBoost and LightGBM in production:
+Major companies using XGBoost and LightGBM in production - AFAIK, don't quote me on this.
 
 | Company | Algorithm | Use Case |
 |---------|-----------|----------|
@@ -406,8 +406,6 @@ Major companies using XGBoost and LightGBM in production:
 | **Amazon** | XGBoost/LightGBM | Product recommendations |
 
 These algorithms power critical production systems handling billions of predictions daily.
-
-**Trade-off**: 6.7x slower than ID3 (but still < 1 second on these datasets)
 
 ### Quick Start
 
@@ -426,7 +424,7 @@ predictions = model.predict(X_test)
 
 ---
 
-## Observations
+## Observations of Good Old ID3
 
 ### Strengths
 - Simple and interpretable
