@@ -91,7 +91,8 @@ From Section 4 of Quinlan's paper:
 3. **Select attribute** with maximum information gain: `gain(A) = I(p,n) - E(A)`
 4. **Create node** for selected attribute with branches for each value
 5. **Recursively build subtrees** for each partition
-6. **Stop** when all examples in a partition have the same class
+6. **Stop** when all examples in a partition have the same class. No attributes left to split on. No examples left in a branch (or zero information gain)
+8. Attributes used at a node are removed from consideration in subtrees
 
 ### C4.5 (1993) - Gain Ratio & Pruning
 
